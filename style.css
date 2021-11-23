@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-image: url("images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(230, 100%, 99%);
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 95vh;    
+}
+
+.heading-and-deck {
+    background-image: url("images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+    margin-bottom: 12px;
+}
+
+p {
+    color: hsl(225, 20%, 60%);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.deck {
+    color: hsl(225, 20%, 60%);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    min-width: 540px;
+    /* max-height: 400px; */
+    border-radius: 9px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px hsl(230deg 18% 93%);
+}
+
+.card-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.card-header_top-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 24px;
+}
+
+
+.card-header_bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 64px;
+    padding-left: 155px;
+}
+
+.fee-rate_container {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    padding-right: 48px;
+}
+
+.page-views {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.45px;
+    text-transform: uppercase;
+    padding-left: 48px;
+}
+
+.fee {
+    font-size: 39px;
+    font-weight: 800;
+    letter-spacing: -0.1px;
+    color: hsl(227, 35%, 25%);
+    padding-right: 8px;
+}
+
+.rate {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-height: 136px;
+    border-top: 1px solid #F1F1F3;
+}
+
+.card-footer li {
+    color: hsl(225, 20%, 60%);
+    font-size: 12px;
+    font-weight: 600;
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+li img {
+    padding-right: 15px;
+}
+
+.cta {
+    padding: 12px 46px; 
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(226, 100%, 87%);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.cta:hover {
+    color: #ffffff;
+}
+
+.discount-tag {
+    display: inline-block;
+    border-radius: 9px;
+    font-size: 10px;
+    font-weight: 800;
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 2px 6px;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* The range slider */
+
+.range-slide_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 48px;
+    padding-left: 48px;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;  
+    background: hsl(174, 77%, 80%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+  
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background: hsl(174, 86%, 45%);
+    background-image: url("images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 10px hsl(174, 77%, 80%);
+    cursor: pointer;
+}
+  
+.range-slider::-webkit-slider-thumb:hover {
+    background-color: #24AFA8;
+}
+
+.range-slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsl(174, 86%, 45%);
+    background-image: url("images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 10px hsl(174, 77%, 80%);
+    cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb:hover {
+    background-color: #24AFA8;
+}
+
+  
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 22px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d0d9e8;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.slider:hover {
+    background-color: #24AFA8;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+input:checked + .slider {
+    background-color: #76ecdc;
+}
+
+input:checked + .slider:hover {
+    background-color: #24AFA8;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #76ecdc;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 11px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+
+    .content {
+        min-height: 85vh;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 10.2px;
+    }
+
+    .heading-and-deck {
+        padding-bottom: 28.5px;
+    }
+
+    .deck {
+        font-size: 13px;
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .card {
+        max-width: 280px;
+        min-width: unset;
+        margin-top: 28.5px;
+    }
+
+    .card-header_top-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-views {
+        font-size: 10.25px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .fee {
+        font-size: 27px;
+        letter-spacing: -0.2px;
+    }
+
+    .rate {
+        font-size: 12px;
+    }
+
+    .range-slide_container {
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .discount-tag {
+        display: none;
+    }
+    
+    .mobile {
+        display: inline-block;
+    }
+
+    .card-header_bottom-container {
+        padding-left: 28px;
+        padding-right: 5px;
+    }
+
+    .card-header_bottom-container p {
+        margin-right: 10px;
+    }
+
+    .card-footer {
+        flex-direction: column;
+    }
+
+    .card-footer > ul {
+        padding-bottom: 25px;
+    }
+
+    .card-footer li {
+        font-size: 10.35px;
+        text-align: center;
+    }
+
+    .cta {
+        font-size: 10.35px;
+        padding: 10.5px 39.11px;
+    }
+
+
+    .switch {
+        width: 37px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .slider:before {
+        height: 12px;
+        width: 12px;
+        left: 3px;
+        bottom: 3px;
+    }
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <title>Interactive pricing component challenge hub</title>
+</head>
+<body>
+    <div class="content">
+        
+        <div class="heading-and-deck">
+            <h1>Simple, traffic-based pricing</h1>
+            <p class="deck">Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                
+                <div class="card-header_top-container">
+                    <p class="page-views">100k pageviews</p>
+                    <div class="fee-rate_container">
+                        <p class="fee">$16.00</p>
+                        <p class="rate">/ month</p>
+                    </div>
+                    <div class="range-slide_container">
+                        <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange">
+                    </div>
+                </div>
+                
+                <div class="card-header_bottom-container">
+                    <p>Monthly Billing</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Yearly Billing</p>
+                    <p class="discount-tag">25% discount</p>
+                    <p class="discount-tag mobile">-25%</p>
+                </div>
+            </div>
+            <div class="card-footer">
+                <ul>
+                    <li><img src="images/icon-check.svg" alt="Green check">Unlimited websites</li>
+                    <li><img src="images/icon-check.svg" alt="Green check">100% data ownership</li>
+                    <li><img src="images/icon-check.svg" alt="Green check">Email reports</li>
+                </ul>
+                <button class="cta">Start my trial</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
