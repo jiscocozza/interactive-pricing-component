@@ -23,20 +23,20 @@
             <div class="card-header">
                 
                 <div class="card-header_top-container">
-                    <p class="page-views">100k pageviews</p>
+                    <p id="page-views">100k pageviews</p>
                     <div class="fee-rate_container">
-                        <p class="fee">$16.00</p>
+                        <p id="fee">$16.00</p>
                         <p class="rate">/ month</p>
                     </div>
                     <div class="range-slide_container">
-                        <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange">
+                        <input type="range" min="1" max="100" value="50" class="range-slider" id="myRange" oninput="pageViewRanges(this.value)">
                     </div>
                 </div>
                 
                 <div class="card-header_bottom-container">
                     <p>Monthly Billing</p>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="switchState" onchange="pageViewRanges(myRange.value)">
                         <span class="slider round"></span>
                     </label>
                     <p>Yearly Billing</p>
